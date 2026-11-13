@@ -1,0 +1,338 @@
+@import /* Heading */
+url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+@import /* system font */
+url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+@import /* System Warning Heading */
+url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+@import  /* hand written style */
+url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+@import /* sister's voice font */
+url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+
+
+/* Generally I use https://www.w3schools.com/css/default.asp to help with my css */
+
+html, body{
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+/*--------------------- Common - status bar & wrapper ----------------------*/
+#statusbar {
+  display: flex; /* Use flex to place items in one row */
+  justify-content: space-between; /* split it */
+  
+
+  padding: 0 25px ;
+
+  font-family: "Share Tech Mono";
+  font-size: 18px;
+  letter-spacing: 3.5px;
+
+  color: #85857d;
+
+  border-bottom: 2px solid #2B2B30;
+}
+
+
+#wrapper{
+  display: flex; /* Use flexbox for vertical layout */
+  flex-direction: column;  /* Stack elements vertically */
+  justify-content: center;  /* Center content vertically */
+  align-items: center;  /* Center content horizontally */
+}
+
+/* -----------------(page 1) loading part------------------*/
+#loading{
+  font-family: "Share Tech Mono";
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  line-height: 19px;
+  color: #93928f ;
+  
+}
+
+#loading .dim{
+  color: #93928f60;
+}
+
+
+/*--------------------- words style ----------------*/
+h1{
+  font-size: 55px;
+  font-family: "Hurricane";
+  color: #fce9ff;
+  text-align: center;
+  letter-spacing: 4px;
+  line-height: 60px;
+  margin: 0 0 20px;
+}
+
+
+
+.highlight {
+  font-size: 20px;
+  color: #b63345;
+   animation: blink 2.5s ease-in-out infinite; 
+}  /* ease-in-out : timing function */
+
+/* keyframes : how an animation changes at each step from the beginning to the end.*/
+@keyframes blink{
+  0%, 100% { opacity: 0.35; } /* start & end */
+  50%      { opacity: 1; } /* middle */
+}
+
+.warn{
+  color:#ff5a5a;
+}
+
+.highlight_3{ 
+  letter-spacing: 2px;
+  font-family: "Rubik Glitch";
+  font-size: 20px;
+  color: #000000;
+  animation: blink 3s ease-in-out infinite; 
+}
+
+/* [ease-in-out] https://www.w3schools.com/css/css3_animations_timing.asp */
+
+@keyframes blink{
+  0%, 100% { opacity: 0.35; } /* start & end */
+  50%      { opacity: 1; } /* middle */
+}
+
+/* -------------------  window part （page 1）---------------------- */
+
+.window{
+  border: 2px solid #bc9fbf;
+  background: #b9abab40;
+  width: min(88%, 888px);
+  padding: 10px 30px;
+}
+
+#title{
+  border-bottom: 2px solid #686873;
+  padding: 12px 14px;
+
+  font-family: "Share Tech Mono";
+  letter-spacing: 3px;
+  font-size: 18px;
+
+  color: #b9b5ab;
+  margin: 0;
+}
+
+.body{
+  padding: 10px;
+  font-family: "Share Tech Mono";
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+
+.body p{
+  margin: 0 0 10px;
+}
+
+.body p:last-child{
+  margin-bottom: 0;
+}
+
+/*------------------------------- plot window --------------------------*/
+
+/*-----------------Black Background with White words------------------*/
+.scene_window{
+  border:2px solid #df7e10;
+  background:#05050599;
+  width:min(88%, 888px);
+  padding: 1px 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.style1{
+  padding: 10px;
+  font-family: "Share Tech Mono";
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+/*------------------Red Background with Black Words------------------*/
+.rule_window{
+  border:3px solid #ffd500;
+  background:#c22b3f99;
+  width:min(88%, 888px);
+  padding: 1px 30px;
+  margin-top: 5px;
+}
+
+.style2{
+  padding: 10px;
+  font-family: "Share Tech Mono";
+  font-size: 16px;
+  color: #000000;
+}
+
+/*---------------------- Brighter window-------------------------*/
+
+.brighter_window{
+  border:2px solid #d2a776;
+  background:#897f7f99;
+  width:min(88%, 888px);
+  padding: 1px 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+
+/* -------------------- choices button (common) -----------------------*/
+
+nav{ 
+  margin-top:5px;
+}
+   
+nav a{
+  display:block;
+  padding:12px 14px;
+  margin:5px 0;
+  border:1px solid #2a2a33;
+  border-radius:12px;
+  background:#f5e4e450;
+  color:#fcf3e1;
+  letter-spacing:0.5px;
+
+  font-family: "Share Tech Mono";
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:active{
+  color: #f6de7f;
+  background:#ffffff10;
+}
+
+/*---------------------------Stick Notes（obey.html）-----------------------*/
+.handwritten{
+  font-size: 25px;
+  font-family: "Reenie Beanie";
+  color:#ffffff;
+  margin-top: 15px;
+  margin-left: 110px;
+  border: 1px solid #2a2a33;
+  border-radius: 12px;
+  padding: 0 37px;
+  background:#adadb580;
+
+  max-width: 450px;
+}
+
+#notes{ margin: 14px 0; }
+
+
+/*------------------- (room.html) Layout -----------------------*/  
+ /* gap: https://www.w3schools.com/cssref/css3_pr_gap.php 
+    flex, align-item https://www.w3schools.com/css/css3_flexbox_items.asp */
+#scene{
+  display:flex;
+  gap:14px;
+  align-items: stretch;   /* make both blocks the same height */
+     
+  border:2px solid #d2a776;
+  background:#897f7f99;
+     
+  width: min(100%, 925px);
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#roomview{
+  flex: 1;      /* left side */
+}
+
+#diary{
+  flex: 1;       /* right side */
+  width: auto;   
+}
+
+/*---------------------(room.html) Diary Animation-----------------*/
+#diary{
+  border:1px solid #2a2a33;
+  border-radius:12px;
+  background: rgba(255,255,255,0.03);
+  padding:12px;
+  position:relative;
+  overflow:hidden;
+}
+
+/* hiding context */
+#entry{
+  opacity:0;
+  transition: opacity 0.2s ease;
+
+  font-family: "Reenie Beanie", cursive;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+#entry:hover{
+  opacity:1;
+}
+
+
+
+/*--------------------- Shadow's talking -------------------------*/
+.shadow{
+  font-family: "Caramel";
+  font-size: 30px;
+  color: #f2b4d8;
+  letter-spacing: 4px;
+}
+
+
+/*-------------------- Small screen in the window ----------------*/
+#small{
+  margin: 10px 100px;
+  border:1px solid #bdbbbb;
+  border-radius:12px;
+  background: rgba(142, 139, 139, 0.35);
+  padding:14px;
+}
+
+#small p{
+  margin-left: 50px;
+  font-family: "Reenie Beanie";
+  font-size: 23px;
+  color: #ffffff;
+}
+
+
+#small2{
+  margin: 10px 100px;
+  border:1px solid #bdbbbb;
+  border-radius:12px;
+  background: rgba(142, 139, 139, 0.35);
+  padding:14px;
+}
+
+/*--------------page (shadow.html) nickname style design ---------*/
+#nickname{
+  margin: 20px 400px;
+  font-size: 18px;
+  font-family: "Caramel";
+  color: #ffa0d6;
+  letter-spacing: 4px;
+}
+
+#nickname p{
+  margin: 0 ;
+  line-height: 0.15 ;
+}
